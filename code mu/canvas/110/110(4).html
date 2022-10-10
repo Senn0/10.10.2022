@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <canvas width="200 " height="200" style="background: #f4f4f4;"></canvas>
+    <script>
+        function getRadians(degrees) {return (Math.PI / 180) * degrees;}
+        
+        let canvas = document.querySelector('canvas');
+        let ctx = canvas.getContext('2d');
+
+        ctx.beginPath();
+        ctx.moveTo(75, 25); 
+        ctx.lineTo(125, 25);
+        ctx.lineTo(125, 75);
+        ctx.lineTo(75, 75);
+        ctx.closePath();
+        ctx.fillStyle = 'red';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(75, 100); 
+        ctx.lineTo(125, 100);
+        ctx.lineTo(125, 150);
+        ctx.lineTo(75, 150);
+        ctx.closePath();
+        ctx.fillStyle = 'green';
+        ctx.fill();
+
+    </script>
+</html>
